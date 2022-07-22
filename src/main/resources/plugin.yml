@@ -1,0 +1,5 @@
+name: ScreenLobby
+version: 1.0
+main: com.redescreen.lobby.ScreenLobbyPlugin
+authors: [ LDNzera, Screen ]
+website: https://github.com/LDNzera/
