@@ -99,6 +99,8 @@ Messages:
             display-name: "&cVazio!"
             lore:
               - "&7Em breve..."
+      Return:
+        display-name: "&aVoltar"
 
     Selector:
       interact-item:
@@ -192,6 +194,10 @@ Messages:
             - " &fUsu\u00E1rio: &7@ServidorScreen"
             - ""
             - "&bClique para obter o link."
+          click-event:
+            text-component: "\n   &bClique &b&lAQUI &bpara acessar nosso Twitter.\n "
+            component-builder: "&7Twitter: &f@ServidorScreen"
+            url: "https://www.twitter.com/ServidorScreen"
         Discord:
           display-name: "&9Discord"
           lore:
@@ -201,6 +207,10 @@ Messages:
             - " &fLink: &7discord.redescreen.com"
             - ""
             - "&9Clique para obter o link."
+          click-event:
+            text-component: "\n   &9Clique &9&lAQUI &9para acessar nosso Discord.\n "
+            component-builder: "&7Discord: &fdiscord.redescreen.com"
+            url: "https:/discord.redescreen.com"
         YouTube:
           display-name: "&cYouTube"
           lore:
@@ -210,3 +220,7 @@ Messages:
             - " &fCanal: &7Screen Network"
             - ""
             - "&cClique para obter o link."
+          click-event:
+            text-component: "\n   &cClique &c&lAQUI &cpara acessar nosso canal do YouTube.\n "
+            component-builder: "&7YouTube: &fyoutube.com/ServidorScreen"
+            url: "https://www.youtube.com/ServidorScreen"
