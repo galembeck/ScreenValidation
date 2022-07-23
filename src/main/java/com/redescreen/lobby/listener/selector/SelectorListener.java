@@ -1,7 +1,7 @@
-package com.redescreen.lobby.listener.serverselector;
+package com.redescreen.lobby.listener.selector;
 
 import com.redescreen.lobby.ScreenLobbyPlugin;
-import com.redescreen.lobby.inventory.serverselector.SelectorInventory;
+import com.redescreen.lobby.inventory.selector.SelectorInventory;
 import net.md_5.bungee.api.chat.*;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;

@@ -1,4 +1,4 @@
-package com.redescreen.lobby.inventory.serverselector;
+package com.redescreen.lobby.inventory.selector;
 
 import com.redescreen.lobby.ScreenLobbyPlugin;
 import com.redescreen.lobby.util.SkullUtil;

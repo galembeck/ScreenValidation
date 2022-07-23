@@ -4,7 +4,7 @@ import com.redescreen.lobby.listener.collectibles.CollectiblesListener;
 import com.redescreen.lobby.listener.inventory.InventoryListener;
 import com.redescreen.lobby.listener.player.JoinListener;
 import com.redescreen.lobby.listener.collectibles.categories.WingsListener;
-import com.redescreen.lobby.listener.serverselector.SelectorListener;
+import com.redescreen.lobby.listener.selector.SelectorListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
