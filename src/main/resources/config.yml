@@ -1,0 +1,212 @@
+#    _____  ______ _____  ______    _____  _____ _____  ______ ______ _   _
+#   |  __ \|  ____|  __ \|  ____|  / ____|/ ____|  __ \|  ____|  ____| \ | |
+#   | |__) | |__  | |  | | |__    | (___ | |    | |__) | |__  | |__  |  \| |
+#   |  _  /|  __| | |  | |  __|    \___ \| |    |  _  /|  __| |  __| | . ` |
+#   | | \ \| |____| |__| | |____   ____) | |____| | \ \| |____| |____| |\  |
+#   |_|  \_\______|_____/|______| |_____/ \_____|_|  \_\______|______|_| \_|
+
+# Website: www.redescreen.com
+# Discord: discord.gg/redescreen
+# Github: https://github.com/LDNzera
+
+Messages:
+  Inventories:
+    Collectibles:
+      interact-item:
+        display-name: "&6Colecion\u00E1veis"
+        lore:
+          - "&7Ande estiloso pelo lobby"
+          - ""
+          - "&eClique para abrir."
+      inventory-name: "Colecion\u00E1veis"
+      inventory-slots: 27
+
+      Categories:
+        inventory-slots: 45
+        Wings:
+          display-name: "&6Asas"
+          lore:
+            - "&7Equipe deslumbrantes asas e"
+            - "&7desfile com elas no lobby."
+            - ""
+            - "&6Clique para acessar."
+          inventory-name: "Colecion\u00E1veis "
+          angel-wings:
+            unequipped-display-name: "&cAsas de Anjo"
+            equipped-display-name: "&aAsas de Anjo"
+            no-permission-lore:
+              - ""
+              - " &7J\u00E1 imaginou voar como"
+              - " &7um anjo mas n\u00E3o possui nenhum"
+              - " &7tipo de asa? Fique tranquilo..."
+              - " &7essas asas lhe concedem essa"
+              - " &7experi\u00EAncia \u00FAnica!"
+              - ""
+              - "&6[Screen] &7ou superior."
+            permission-lore:
+              - ""
+              - " &7J\u00E1 imaginou voar como"
+              - " &7um anjo mas n\u00E3o possui nenhum"
+              - " &7tipo de asa? Fique tranquilo..."
+              - " &7essas asas lhe concedem essa"
+              - " &7experi\u00EAncia \u00FAnica!"
+              - ""
+              - "&eClique para equipar."
+          flame-wings:
+            unequipped-display-name: "&cAsas Flamejantes"
+            equipped-display-name: "&aAsas Flamejantes"
+            no-permission-lore:
+              - ""
+              - " &7Que tal voar enquanto"
+              - " &7solta chamas pelo corpo?"
+              - " &7Essa asa lhe possibilita"
+              - " &7experimentar essa combina\u00E7\u00E3o."
+              - ""
+              - "&a[Esmeralda] &7ou superior."
+            permission-lore:
+              - ""
+              - " &7Que tal voar enquanto"
+              - " &7solta chamas pelo corpo?"
+              - " &7Essa asa lhe possibilita"
+              - " &7experimentar essa combina\u00E7\u00E3o."
+              - ""
+              - "&eClique para equipar."
+
+        Effects:
+          display-name: "&6Efeitos"
+          lore:
+            - "&7Escolha um super efeito para"
+            - "&7desfilar em nosso lobby."
+            - ""
+            - "&6Clique para acessar."
+          inventory-name: "Colecion\u00E1veis  "
+          empty:
+            display-name: "&cVazio!"
+            lore:
+              - "&7Em breve..."
+
+        Clothes:
+          display-name: "&6Roupas"
+          lore:
+            - "&7Equipe armaduras de couro"
+            - "&7com todas as cores poss\u00EDveis"
+            - "&7dispon\u00EDveis, criando"
+            - "&7combina\u00E7\u00F5es incr\u00EDveis!"
+            - ""
+            - "&6Clique para acessar."
+          inventory-name: "Colecion\u00E1veis   "
+          empty:
+            display-name: "&cVazio!"
+            lore:
+              - "&7Em breve..."
+
+    Selector:
+      interact-item:
+        display-name: "&eModos de jogo"
+        lore:
+          - "&7Selecione o que deseje!"
+          - ""
+          - "&eClique para abrir."
+      inventory-name: "Servidores"
+      inventory-slots: 36
+      Options:
+        Donation:
+          display-name: "&6Fa\u00E7a a sua doa\u00E7\u00E3o!"
+          lore:
+            - "&7Ajude o servidor a manter-se"
+            - "&7online adquirindo pacotes dispon\u00EDveis"
+            - "&7em nossa loja online."
+            - ""
+            - " &fLoja: &7loja.redescreen.com"
+            - ""
+            - "&6Clique para obter o link."
+          click-event:
+            text-component: "\n   &6Clique &6&lAQUI &6para acessar nossa loja online.\n "
+            component-builder: "&7Loja online: &floja.redescreen.com"
+            url: "https://loja.redescreen.com"
+        Overpower:
+          display-name: "&e&lPOPULAR! &aRank UP Overpower"
+          lore:
+            - ""
+            - " &fSaiba mais: &7overpower.redescreen.com"
+            - ""
+            - " &fFuncionalidades:"
+            - " &8^ &7Geradores de min\u00E9rios;"
+            - " &8^ &7Mochilas;"
+            - " &8^ &7N\u00EDveis;"
+            - " &8^ &7Caverna de bosses;"
+            - " &8^ &7PvP UP;"
+            - " &8^ &7E muito mais!"
+            - ""
+            - "{overpower-playing} &7jogando..." # TODO Trocar {overpower-playing} pelo número de jogadores online no servidor...
+            - "&a* Clique para entrar!"
+        PrisonAqua:
+          display-name: "&cPrison Aqua"
+          lore:
+            - ""
+            - " &7Brevemente, voc\u00EA ir\u00E1 voltar"
+            - " &7a jogar num Prison que \u00E9"
+            - " &7verdadeiramente um Prison."
+            - ""
+            - "&cSaiba tudo em:"
+            - "&f* &7discord.redescreen.com" # TODO Adicionar cor cinza e branca na seta do discord (troca de cor)...
+        Factions:
+          display-name: "&cFactions Overpower"
+          lore:
+            - ""
+            - " &7J\u00E1 pensou em jogar em um"
+            - " &7Factions, por\u00E9m, com as ideias"
+            - " &7loucas do Screen? Brevemente,"
+            - " &7essa ser\u00E1 uma realidade"
+            - " &7poss\u00EDvel."
+            - ""
+            - "&cSaiba tudo em:"
+            - "&f* &7discord.redescreen.com" # TODO Adicionar cor cinza e branca na seta do discord (troca de cor)...
+        ClickerTycoon:
+          display-name: "&4&lEXCLUSIVO! &cClicker Tycoon"
+          lore:
+            - ""
+            - " &7O jogo de celular mais famoso do"
+            - " &7mundo, por\u00E9m, agora no Minecraft."
+            - ""
+            - "&cSaiba tudo em:"
+            - "&f* &7discord.redescreen.com" # TODO Adicionar cor cinza e branca na seta do discord (troca de cor)...
+        Soon:
+          display-name: "&c???"
+          lore:
+            - ""
+            - " &7Duas coisas que nesse servidor"
+            - " &7v\u00E3o estar juntas: ganhar dinheiro e"
+            - " &7jogar. Duas das melhores coisas"
+            - " &7da vida, n\u00E3o \u00E9 mesmo?"
+            - ""
+            - "&cSaiba tudo em:"
+            - "&f* &7discord.redescreen.com" # TODO Adicionar cor cinza e branca na seta do discord (troca de cor)...
+        Twitter:
+          display-name: "&bTwitter"
+          lore:
+            - "&7Fique a par de todas as"
+            - "&7novidades de nosso servidor"
+            - "&7seguindo nosso perfil."
+            - ""
+            - " &fUsu\u00E1rio: &7@ServidorScreen"
+            - ""
+            - "&bClique para obter o link."
+        Discord:
+          display-name: "&9Discord"
+          lore:
+            - "&7Interaja e fa\u00E7a novas amizades"
+            - "&7em nossa comunidade."
+            - ""
+            - " &fLink: &7discord.redescreen.com"
+            - ""
+            - "&9Clique para obter o link."
+        YouTube:
+          display-name: "&cYouTube"
+          lore:
+            - "&7Assista \u00E0 v\u00EDdeos legais sobre"
+            - "&7o servidor em nosso canal."
+            - ""
+            - " &fCanal: &7Screen Network"
+            - ""
+            - "&cClique para obter o link."

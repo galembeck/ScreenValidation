@@ -3,3 +3,7 @@ version: 1.0
 main: com.redescreen.lobby.ScreenLobbyPlugin
 authors: [ LDNzera, Screen ]
 website: https://github.com/LDNzera/
+permissions:
+  screen.*:
+    description: Concede acesso \u00E0 todos as funcionalidades dispon\u00EDveis neste plugin, ou seja, concede todas as permiss\u00F5es e garante o acesso \u00EDntegro aos sistemas.
+#    children:
