@@ -224,3 +224,14 @@ Messages:
             text-component: "\n   &cClique &c&lAQUI &cpara acessar nosso canal do YouTube.\n "
             component-builder: "&7YouTube: &fyoutube.com/ServidorScreen"
             url: "https://www.youtube.com/ServidorScreen"
+  Items:
+    Players-Combat:
+      interact-item:
+        display-name: "&aModo PvP"
+        lore:
+          - "&7Duele com os amigos."
+          - ""
+          - "&eClique para entrar."
+    Players-Visibility:
+      interact-item:
+        display-name: "&aJogadores vis\u00EDveis"

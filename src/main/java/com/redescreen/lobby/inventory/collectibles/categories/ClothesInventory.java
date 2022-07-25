@@ -21,15 +21,15 @@ public class ClothesInventory {
         ConfigurationSection clothesCategoryMenu = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Categories.Clothes");
         ConfigurationSection empty = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Categories.Clothes.empty");
 
-        ConfigurationSection arrowReturn = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Return");
+        ConfigurationSection returnArrow = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Return");
 
         Inventory i = Bukkit.createInventory(null, inventorySlots.getInt("inventory-slots"), clothesCategoryMenu.getString("inventory-name"));
 
         ItemStack Empty = new ItemStack(Material.WEB);
         ItemMeta EmptyMeta = Empty.getItemMeta();
 
-        ItemStack ArrowReturn = new ItemStack(Material.ARROW);
-        ItemMeta ArrowReturnMeta = Empty.getItemMeta();
+        ItemStack ReturnArrow = new ItemStack(Material.ARROW);
+        ItemMeta ReturnArrowMeta = ReturnArrow.getItemMeta();
 
 
         String emptyDisplayName = empty.getString("display-name").replace("&", "§");
@@ -42,13 +42,13 @@ public class ClothesInventory {
         Empty.setItemMeta(EmptyMeta);
 
 
-        String arrowReturnDisplayName = arrowReturn.getString("display-name").replace("&", "§");
-        ArrowReturnMeta.setDisplayName(arrowReturnDisplayName);
-        ArrowReturn.setItemMeta(ArrowReturnMeta);
+        String returnArrowDisplayName = returnArrow.getString("display-name").replace("&", "§");
+        ReturnArrowMeta.setDisplayName(returnArrowDisplayName);
+        ReturnArrow.setItemMeta(ReturnArrowMeta);
 
 
         i.setItem(22, Empty);
-        i.setItem(40, ArrowReturn);
+        i.setItem(40, ReturnArrow);
 
         player.openInventory(i);
     }

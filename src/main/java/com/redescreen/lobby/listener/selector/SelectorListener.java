@@ -3,7 +3,6 @@ package com.redescreen.lobby.listener.selector;
 import com.redescreen.lobby.ScreenLobbyPlugin;
 import com.redescreen.lobby.inventory.selector.SelectorInventory;
 import net.md_5.bungee.api.chat.*;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -60,10 +59,9 @@ public class SelectorListener implements Listener {
                 case OBSIDIAN:
                 case REDSTONE:
                 case WEB:
-                    player.sendMessage("§cExpulso ao tentar se conectar ao servidor (em manutenção)...");
+                    player.sendMessage("§cOps! Esse servidor não está disponível para você.");
                     player.closeInventory();
                     break;
-                    // TODO Terminar de adicionar as funções de Twitter, Discord e YouTube...
             }
 
             ItemStack informationSkulls = e.getCursor();

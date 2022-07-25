@@ -1,14 +1,13 @@
-package com.redescreen.lobby.shared.inventory;
+package com.redescreen.lobby.shared;
 
-import com.redescreen.lobby.inventory.collectibles.categories.ClothesInventory;
 import org.bukkit.Material;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class PreviousInventory {
+public class InventoryCallback {
 
-    public static void previousInventory(InventoryClickEvent e) {
+    public static void inventoryCallback(InventoryClickEvent e) {
         ItemStack ArrowReturn = new ItemStack(Material.ARROW);
         ItemMeta ArrowReturnMeta = ArrowReturn.getItemMeta();
 

@@ -1,6 +1,9 @@
 package com.redescreen.lobby;
 
 import com.redescreen.lobby.listener.collectibles.CollectiblesListener;
+import com.redescreen.lobby.listener.collectibles.categories.ClothesListener;
+import com.redescreen.lobby.listener.collectibles.categories.EffectsListener;
+import com.redescreen.lobby.listener.interaction.PlayersCombatListener;
 import com.redescreen.lobby.listener.inventory.InventoryListener;
 import com.redescreen.lobby.listener.player.JoinListener;
 import com.redescreen.lobby.listener.collectibles.categories.WingsListener;
@@ -28,9 +31,16 @@ public class ScreenLobbyPlugin extends JavaPlugin {
     public void registerEvents() {
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new JoinListener(), this);
-        pm.registerEvents(new CollectiblesListener(), this);
+
         pm.registerEvents(new InventoryListener(), this);
+
+        pm.registerEvents(new CollectiblesListener(), this);
+        pm.registerEvents(new ClothesListener(), this);
+        pm.registerEvents(new EffectsListener(), this);
         pm.registerEvents(new WingsListener(), this);
+
         pm.registerEvents(new SelectorListener(), this);
+
+        pm.registerEvents(new PlayersCombatListener(), this);
     }
 }

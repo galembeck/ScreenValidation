@@ -20,10 +20,15 @@ public class EffectsInventory {
         ConfigurationSection effectsCategoryMenu = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Categories.Effects");
         ConfigurationSection empty = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Categories.Effects.empty");
 
+        ConfigurationSection returnArrow = ScreenLobbyPlugin.plugin.getConfig().getConfigurationSection("Messages.Inventories.Collectibles.Return");
+
         Inventory i = Bukkit.createInventory(null, inventorySlots.getInt("inventory-slots"), effectsCategoryMenu.getString("inventory-name"));
 
         ItemStack Empty = new ItemStack(Material.WEB);
         ItemMeta EmptyMeta = Empty.getItemMeta();
+
+        ItemStack ReturnArrow = new ItemStack(Material.ARROW);
+        ItemMeta ReturnArrowMeta = ReturnArrow.getItemMeta();
 
 
         String emptyDisplayName = empty.getString("display-name").replace("&", "§");
@@ -36,7 +41,13 @@ public class EffectsInventory {
         Empty.setItemMeta(EmptyMeta);
 
 
+        String returnArrowDisplayName = returnArrow.getString("display-name").replace("&", "§");
+        ReturnArrowMeta.setDisplayName(returnArrowDisplayName);
+        ReturnArrow.setItemMeta(ReturnArrowMeta);
+
+
         i.setItem(22, Empty);
+        i.setItem(40, ReturnArrow);
 
         player.openInventory(i);
     }

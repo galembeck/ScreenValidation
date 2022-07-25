@@ -1,6 +1,8 @@
 package com.redescreen.lobby.listener.collectibles.categories;
 
 import com.redescreen.lobby.ScreenLobbyPlugin;
+import com.redescreen.lobby.inventory.collectibles.CollectiblesInventory;
+import com.redescreen.lobby.inventory.collectibles.categories.WingsInventory;
 import org.bukkit.Sound;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -33,6 +35,9 @@ public class WingsListener implements Listener {
                     }
                     break;
                 // TODO Adicionar efeitos e sistema de colecionáveis (asas de anjo e flamejantes)...
+                case ARROW:
+                    CollectiblesInventory.openCollectiblesInventory(player);
+                    break;
             }
         }
     }
