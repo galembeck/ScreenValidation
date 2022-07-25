@@ -1,13 +1,3 @@
-## TODO | ScreenLobby
-
-- [ ] Encontrar um método de utilizar um sistema de callback para os inventários, ou seja, criar um sistema de retornar para a página do inventário anterior de maneira global.
-- [ ] Criar a scoreboard com informações do servidor (lobby).
-- [ ] Finalizar o sistema de colecionáveis, isto é, adicionar asas de anjo e flamejantes.
-- [ ] Alterar parâmetro "{overpower-playing}" da config.yml pelos jogadores online no servidor Overpower (bungeecord).
-- [ ] Criar troca de cores dinâmica e automática nos modos de jogo não habilitados.
-- [ ] Finalizar sistema de combate (corrigir emoji que aparece do NADA no chat ao enviar a mensagem...).
-- [x] Criar sistema de visibilidade dos jogadores no lobby.
-
 # ScreenLobby
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
